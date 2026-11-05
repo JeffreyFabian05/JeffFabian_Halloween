@@ -1,0 +1,121 @@
+/* Set basic page settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Responsive container settings */
+body {
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 400px;
+    background-color: rgba(255, 255, 255, 0.6); /* 60% opacity */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+/* Styling for the image in the header */
+.header img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+/* Text styles */
+h1 {
+    color: black;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    color: black;
+    font-size: 1.2em;
+}
+
+/* Responsive behavior */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+/* Halloween title font */
+h1 {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+}
+
+/* Halloween poem font */
+.text-box p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+/* Halloween container color */
+.container {
+  background-color: rgba(36, 22, 50, 0.9);
+  color: white;
+}
+
+/* Responsive Halloween banner */
+.header img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make Halloween poem readable */
+.text-box p {
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+/* Halloween link colors */
+.text-box a {
+  color: #FFD700;
+}
+
+/* Mobile screen adjustments */
+@media (max-width: 600px) {
+  .text-box p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
+
+/* Keep the top of the page visible on mobile */
+body {
+  min-height: 100vh;
+  height: auto;
+  align-items: flex-start;
+}
+
+/* Preserve poem line breaks */
+.text-box p {
+  white-space: pre-line;
+}
